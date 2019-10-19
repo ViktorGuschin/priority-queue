@@ -55,10 +55,10 @@ class Node {
     } else if (this.parent && this.parent.right === curParent) {
       this.parent.right = this;
     }
-    this.appendChild(curParent);
     if (parentLeft && parentLeft !== this) {
       this.appendChild(parentLeft);
     }
+    this.appendChild(curParent);
     if (parentRight && parentRight !== this) {
       this.appendChild(parentRight);
     }
